@@ -18,8 +18,16 @@ public class App {
 
   }
 
-  public static "object" "function"() {
+  public static String coinCombo(String userInput) {
+    Integer userCoins = Integer.parseInt(userInput);
 
+    Integer quarters = 0;
+
+    while (userCoins > 24) {
+      userCoins -= 25;
+      quarters++;
+    }
+
+    return String.format("Your change is %d quarters", quarters);
   }
 }
-	

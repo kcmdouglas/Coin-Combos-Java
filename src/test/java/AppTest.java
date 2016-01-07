@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 public class AppTest {
 
   @Test
-  public void function_whatShouldHappenInTest_testAnswer() {
+  public void coinCombo_shouldGiveCoinCombo75Cents_3Quarters() {
     App app = new App();
-    Object whatever = alsoWhatever;
-    assertEquals(whatever, app.function(userInput));
+    String coinResult = "Your change is 3 quarters";
+    assertEquals(coinResult, app.coinCombo("75"));
   }
 }
